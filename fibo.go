@@ -26,10 +26,10 @@ func main() {
 	c0[0] = 1
 	c0[1] = 1
 
-	for i := width - 1; i > 0; i-- {
+	for i := width - 1; i >= 0; i-- {
 		if i == width - 1 {
-			img.Set(width-1, 0, Color10)
-			img.Set(width-1, 1, Color10)
+			img.Set(i, 0, Color10)
+			img.Set(i, 1, Color10)
 		} else {
 			img.Set(i, 0, Color00)
 			img.Set(i, 1, Color00)
